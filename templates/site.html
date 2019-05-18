@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<style>
+    
+    h1 {
+      margin: 60px;
+      text-shadow:2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+      font-size: 45px;
+      font-family:'Courier New', Courier, monospace;
+      color:#BA55D3;
+      text-align: center;
+    }
+    h2 {
+      text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+      font-size: 40px;
+      font-family: 'Courier New', Courier, monospace;
+      color:rgb(253, 189, 49);
+      text-align: center;
+
+    }
+    a {
+      font-size: 50px;
+      font-family: "Verdana", "Courier", monospace;
+      color:black;
+      text-align: center;
+      
+    }
+    form {
+      
+      font-size: 20px;
+      text-align: center;
+    }
+    body{
+    
+    margin: 0;
+    padding: 0;
+
+    }
+    .container{
+        text-align:center;
+        margin-top: 50px;
+
+    }
+    .btn1{
+        border: 3px solid rgba(0, 0, 0, 0.5);
+        border-radius: 15px;
+        background: rgba(240, 255, 106, 0.781);
+        padding: 20px 105px;
+        font-size: 25px;
+        font-family:'Courier New', Courier, monospace;
+        cursor: pointer;
+        margin: 50px;
+        transition: 0.5s;
+    }
+    .btn2{
+        border: 3px solid rgba(0, 0, 0, 0.5);
+        border-radius: 15px;
+        background: rgba(240, 255, 106, 0.781);
+        padding: 20px 60px;
+        font-size: 25px;
+        font-family:'Courier New', Courier, monospace;
+        cursor: pointer;
+        margin: 0;
+        transition: 0.5s;
+    }
+    .btn1, .btn2{
+        color:black;
+        
+    }
+    .btn1:hover, .btn2:hover{
+        color: rgb(255, 238, 253);
+    }
+  </style> 
+  <body style = "background: url(https://image.freepik.com/free-vector/travel-elements-pattern-background_1268-1372.jpg)">
+  </body> 
+  </head>
+  <body>
+  <h1>The best deals for the adorable trips</h1>
+  <h2>Select the option below</h2>
+      
+  <form method="POST" action="{{url_for('hotels')}}" >
+      <div class= "container">
+          <button class= "btn btn1">Hotel proposition</button>   
+      </div>  
+  </form>
+  <form method="POST" action="{{url_for('restaurants')}}" >
+      <div class= "container">
+          
+          <button class= "btn btn2">Restaurants proposition </button>
+      </div>    
+  </form>
+  </html>
+        
+                                     
+
+
+
+
+                            
