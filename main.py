@@ -52,7 +52,7 @@ def mappy2(city_name):
 
 def is_valid(city):
     """
-    Checks if city exists.
+    Checks if city exists. Returns True if exists and False otherwise.
     """
     lst = []
     m = 0

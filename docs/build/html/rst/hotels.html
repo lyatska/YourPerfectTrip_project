@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>hotels module &#8212; your_perfect_trip 1.0.0 documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="module-hotels">
+<span id="hotels-module"></span><h1>hotels module<a class="headerlink" href="#module-hotels" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="hotels.HotelSearch">
+<em class="property">class </em><code class="descclassname">hotels.</code><code class="descname">HotelSearch</code><span class="sig-paren">(</span><em>app_id</em>, <em>app_key</em><span class="sig-paren">)</span><a class="headerlink" href="#hotels.HotelSearch" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class that represents search of hotels and its info.
+DynamicArray ADT in usage.
+Based on Goibibo API and needs app_id and app_key.</p>
+<dl class="attribute">
+<dt id="hotels.HotelSearch.BASE">
+<code class="descname">BASE</code><em class="property"> = 'http://developer.goibibo.com/api/'</em><a class="headerlink" href="#hotels.HotelSearch.BASE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="hotels.HotelSearch.GetHotelPrice">
+<code class="descname">GetHotelPrice</code><span class="sig-paren">(</span><em>city_id</em>, <em>check_in</em>, <em>check_out</em><span class="sig-paren">)</span><a class="headerlink" href="#hotels.HotelSearch.GetHotelPrice" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the price information of                all the available hotels in the given city.
+Creates a JSON file with all the info.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="hotels.HotelSearch.SearchHotelsByCity">
+<code class="descname">SearchHotelsByCity</code><span class="sig-paren">(</span><em>city_id</em><span class="sig-paren">)</span><a class="headerlink" href="#hotels.HotelSearch.SearchHotelsByCity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets a list of hotels available in a city alongwith
+information of each hotel. Creates a JSON file with all the info.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="hotels.HotelSearch.get_coordinates">
+<code class="descname">get_coordinates</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#hotels.HotelSearch.get_coordinates" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the coordinations of the cheapest hotel.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="hotels.HotelSearch.research_id">
+<code class="descname">research_id</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#hotels.HotelSearch.research_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reads the JSON file and returns all the identification numbers of needed hotels.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="hotels.HotelSearch.research_price">
+<code class="descname">research_price</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#hotels.HotelSearch.research_price" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reads the JSON file and returns the dictionary of hotels IDs and their prices.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="hotels.HotelSearch.search">
+<code class="descname">search</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#hotels.HotelSearch.search" title="Permalink to this definition">¶</a></dt>
+<dd><p>Processes all the information and returns the best variant                of hotel with the cheapest price, and its coordinations.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="hotels.HotelSearch.user_input">
+<code class="descname">user_input</code><span class="sig-paren">(</span><em>city</em><span class="sig-paren">)</span><a class="headerlink" href="#hotels.HotelSearch.user_input" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reads the CSV file and returns a city code.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">your_perfect_trip</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, lyatska.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.0.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst/hotels.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
